@@ -1,0 +1,293 @@
+/* ================= ROOT ================= */
+html, body {
+  overflow-x: hidden;
+}
+
+.archives-root {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  padding: 24px;
+  color: #e5e7eb;
+  animation: fadeIn 0.4s ease-in;
+}
+
+/* ================= PAGE HEADER ================= */
+
+.archives-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.archives-title h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.archives-actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* ================= BUTTONS ================= */
+
+.primary-btn,
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+}
+
+.primary-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+}
+
+.secondary-btn {
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #1f2937;
+}
+
+.secondary-btn:hover {
+  border-color: #2563eb;
+  color: white;
+}
+
+/* ================= TABLE WRAPPER ================= */
+
+.archive-table-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ================= TABLE ================= */
+
+.archive-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  background: #111827;
+  color: #e5e7eb;
+  border-radius: 16px;
+}
+
+/* ================= HEADER ================= */
+
+.archive-table thead th {
+  position: sticky;
+  top: 0;
+  background: #020617;
+  text-align: left;
+  padding: 14px 16px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #94a3b8;
+  border-bottom: 1px solid #1f2937;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* ================= BODY ================= */
+
+.archive-table tbody tr {
+  border-bottom: 1px solid #1f2937;
+  transition: background 0.2s ease;
+}
+
+.archive-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.archive-table td {
+  padding: 14px 16px;
+  white-space: nowrap;
+}
+.archive-table td.mono {
+  max-width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* ================= EMPTY STATE ================= */
+
+.empty-row {
+  text-align: center;
+  padding: 24px;
+  color: #64748b;
+}
+
+/* ================= TEXT HELPERS ================= */
+
+.mono {
+  font-family: monospace;
+  font-weight: 600;
+}
+
+.status {
+  text-transform: capitalize;
+}
+
+/* ================= ACTION BUTTON ================= */
+
+.icon-btn {
+  background: #2563eb;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background: #1d4ed8;
+}
+
+/* ================= MOBILE ================= */
+
+.archive-table-wrapper::after {
+  content: "← Swipe →";
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 6px;
+}
+
+@media (max-width: 600px) {
+  .archives-page-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .archives-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .archive-table th,
+  .archive-table td {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+  
+  .archives-title h1 {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.challan-meta-table,
+.challan-item-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.challan-meta-table td,
+.challan-item-table th,
+.challan-item-table td {
+  border: 1px solid #1f2937;
+  padding: 8px;
+  font-size: 13px;
+}
+
+.challan-meta-table input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.challan-item-table th {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+
+.challan-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.btn-primary {
+  flex: 1.2;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border-radius: 14px;
+  padding: 14px;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  flex: 1;
+  background: #0f172a;
+  border: 1px solid #334155;
+  color: white;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.btn-outline {
+  flex: 0.8;
+  background: transparent;
+  border: 1px solid #334155;
+  color: #cbd5f5;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.sub-text {
+  display: block;
+  font-size: 11px;
+  opacity: 0.7;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "@vladmandic/face-api": "^1.7.15",
+    "better-sqlite3": "^12.6.0",
+    "cors": "^2.8.5",
+    "docx": "^9.5.1",
+    "express": "^5.2.1",
+    "pdfkit": "^0.17.2",
+    "sqlite3": "^5.0.2",
+    "uuid": "^13.0.0"
+  }
+}
