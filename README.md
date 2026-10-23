@@ -6,7 +6,7 @@ A full-stack web application that **detects and counts electrolyte boxes in real
 
 ## 🎥 Demo Video
 
-[![Watch the demo](screenshots/login.png)(screenshots/dashboard.png)(screenshots/archives page.png)(screenshots/generate challan.png)]((https://youtu.be/6ic29q6Jy90))
+[![Watch the demo](screenshots/login.png)]((https://youtu.be/6ic29q6Jy90))
 
 > Click the image above to watch the full demo.
 
