@@ -6,9 +6,23 @@ A full-stack web application that **detects and counts electrolyte boxes in real
 
 ## 🎥 Demo Video
 
-[![Watch the demo](screenshots/login.png)]((https://youtu.be/6ic29q6Jy90))
+Watch the full demo here: [https://youtu.be/6ic29q6Jy90](https://youtu.be/6ic29q6Jy90)
 
-> Click the image above to watch the full demo.
+---
+
+## 🖼️ Screenshots
+
+### Login
+![Login](screenshots/login.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Archives
+![Archives](screenshots/archives page.png)
+
+### Generate Challan
+![Generate Challan](screenshots/generate challan.png)
 
 ---
 
@@ -56,20 +70,6 @@ Camera → Raspberry Pi + Hailo (YOLO detection) → OpenCV counting
 | Detection server | Python, Flask |
 | Computer vision | YOLO, OpenCV |
 | Edge hardware | Raspberry Pi, Hailo AI accelerator |
-
----
-
-## 🖼️ Screenshots
-
-### Login
-![Login](screenshots/login.png)
-
-### Dashboard / Statistics
-![Dashboard](screenshots/dashboard.png)
-
-
-### Challan
-![Challan](screenshots/generate challan.png)
 
 ---
 
