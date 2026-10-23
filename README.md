@@ -19,10 +19,10 @@ Watch the full demo here: [https://youtu.be/6ic29q6Jy90](https://youtu.be/6ic29q
 ![Dashboard](screenshots/dashboard.png)
 
 ### Archives
-![Archives](screenshots/archives page.png)
+![Archives](screenshots/archivespage.png)
 
 ### Generate Challan
-![Generate Challan](screenshots/generate challan.png)
+![Generate Challan](screenshots/generatechallan.png)
 
 ---
 
